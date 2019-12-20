@@ -29,6 +29,7 @@
 	  , "https://www.w3cschool.cn/*"
 	  , "https://www.runoob.com/*"
 	  , "https://github.com/*"
+	  , "https://stackoverflow.com/*"
 	  , "https://gitee.com/*"
 	 // , "https://juejin.im*" 
 	  , "https://cn.vuejs.org/*"

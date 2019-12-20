@@ -11,7 +11,7 @@ var pre_code="pre>code"  // segmentfault vuejs_org 也是这个,cnblogs w3cschoo
 // $(".highlight.tab-size.js-file-line-container").textContent
 
 //var cnblogs="div#cnblogs_post_body>div.cnblogs_code>pre" // div.cnblogs_code
-var cnblogs="#cnblogs_post_body>div.cnblogs_code>pre" // div.cnblogs_code
+var cnblogs="div.cnblogs_code>pre" // div.cnblogs_code
 
 // iteye 比较麻烦
 // class="dp-highlighter" ol class="dp-c"
@@ -31,7 +31,7 @@ var w3cschool_cn = "div#content > pre" // x
 //.highlight
 //selector = "div.cnblogs_code, .syntaxhighlighter > table > tbody > tr > td.code > div,pre, code, .highlight";
 
-var selector= pre_code+','+iteye+','+runoob+','+cnblogs+','+w3c
+var selector= 'pre,code,'+pre_code+','+iteye+','+runoob+','+cnblogs+','+w3c
 
 $(selector).on("click", function(e) {
 	var txt = e.target.innerText
@@ -85,7 +85,7 @@ $(selector).on("click", function(e) {
 	  }
 	  // Note that any URL fetched here must be matched by a permission in
 	  // the manifest.json file!
-	  var url = 'http://localhost:7777/aa?selection=' + encodeURIComponent(txt);
+	  var url = 'http://localhost:7777/chrome_extensions_copier?selection=' + encodeURIComponent(txt);
 	  xhr.open('GET', url, true);
 	  //xhr.send(txt);// post方式发送
 	  xhr.send();
