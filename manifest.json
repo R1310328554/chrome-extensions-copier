@@ -1,7 +1,7 @@
 {
   "name": "chrome extensions copier",
   "version": "1.0",
-  "description": "用来在chrome浏览器上复制某些网站的某些特定内容，主要是用来复制代码，提高效率！(没办法，某些sb网站不注重用户体验，连这么简单的功能都不提供)",
+  "description": "用于chrome浏览器，复制指定网站上的某些特定内容（主要是代码）,一键复制，一键运行，提高效率！",
   "permissions": ["activeTab", "declarativeContent", "storage", "notifications", "http://*/*"],
   "options_page": "options.html",
   "background": {
