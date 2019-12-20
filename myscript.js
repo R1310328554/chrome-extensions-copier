@@ -10,7 +10,8 @@ var pre_code="pre>code"  // segmentfault vuejs_org 也是这个,cnblogs w3cschoo
 // body > div.application-main > div > main > div.container-lg.clearfix.new-discussion-timeline.experiment-repo-nav.p-responsive > div > div.Box.mt-3.position-relative > div.Box-body.p-0.blob-wrapper.data.type-javascript > table
 // $(".highlight.tab-size.js-file-line-container").textContent
 
-var cnblogs="div#cnblogs_post_body>pre>code" // div.cnblogs_code
+//var cnblogs="div#cnblogs_post_body>div.cnblogs_code>pre" // div.cnblogs_code
+var cnblogs="#cnblogs_post_body>div.cnblogs_code>pre" // div.cnblogs_code
 
 // iteye 比较麻烦
 // class="dp-highlighter" ol class="dp-c"
@@ -30,7 +31,7 @@ var w3cschool_cn = "div#content > pre" // x
 //.highlight
 //selector = "div.cnblogs_code, .syntaxhighlighter > table > tbody > tr > td.code > div,pre, code, .highlight";
 
-var selector= pre_code+','+iteye+','+runoob+','+w3c
+var selector= pre_code+','+iteye+','+runoob+','+cnblogs+','+w3c
 
 $(selector).on("click", function(e) {
 	var txt = e.target.innerText
