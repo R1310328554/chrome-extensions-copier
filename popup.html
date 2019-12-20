@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      button.btn{
+        height: 30px;
+        width: 30px;
+        outline: none;
+      }
+    </style>
+	
+	
+	<style>
+	tr {
+	  white-space: nowrap;
+	}
+	.results {
+	  text-align: right;
+	  min-width: 6em;
+	  color: black;
+	}
+	</style>
+
+  </head>
+  <body>
+    <button class="btn" id="changeColor"></button>
+    <script src="popup.js"></script>
+	
+	
+	<table width=300px height=300px >
+	  <tr>
+	    <td><button id="testRequest">Measure sendRequest</button></td>
+	    <td id="resultsRequest" class="results">(results)</td>
+	  </tr>
+	  <tr>
+	    <td><button id="testConnect">Measure postMessage</button></td>
+	    <td id="resultsConnect" class="results">(results)</td>
+	  </tr>
+	</table>
+
+  </body>
+</html>

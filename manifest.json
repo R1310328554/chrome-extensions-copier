@@ -1,0 +1,47 @@
+{
+  "name": "chrome extensions copier",
+  "version": "1.0",
+  "description": "用来在chrome浏览器上复制某些网站的某些特定内容，主要是用来复制代码，提高效率！(没办法，某些sb网站不注重用户体验，连这么简单的功能都不提供)",
+  "permissions": ["activeTab", "declarativeContent", "storage", "notifications", "http://*/*"],
+  "options_page": "options.html",
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "page_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/get_started16.png",
+      "32": "images/get_started32.png",
+      "48": "images/get_started48.png",
+      "128": "images/get_started128.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.cnblogs.com/*"
+	  , "https://jianshu.com/*"
+	  , "https://iteye.com/*"
+	  , "https://csdn.net/*"
+	  , "https://segmentfault.com/*"
+	  , "https://www.mooc.cn/*"
+	  , "https://www.w3school.com.cn/*"
+	  , "https://www.w3cschool.cn/*"
+	  , "https://www.runoob.com/*"
+	  , "https://github.com/*"
+	  , "https://gitee.com/*"
+	 // , "https://juejin.im*" 
+	  , "https://cn.vuejs.org/*"
+	  , "http://open.chrome.360.cn/*"],
+      "css": ["mystyles.css"],
+      "js": ["jquery.js", "myscript.js"]
+    }
+  ],
+  "icons": {
+    "16": "images/get_started16.png",
+    "32": "images/get_started32.png",
+    "48": "images/get_started48.png",
+    "128": "images/get_started128.png"
+  },
+  "manifest_version": 2
+}
