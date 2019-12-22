@@ -36,6 +36,9 @@ var selector= 'pre,code,'+pre_code+','+iteye+','+runoob+','+cnblogs+','+w3c
 $(selector).on("click", function(e) {
 	var txt = e.target.innerText
 	console.log(txt)
+	if(txt.startsWith("$ ") || txt.startsWith("# ")){
+		txt = txt.substring(1)
+	}
 
 	// TODO 如果选择的行以 $、# 开头 会导致不能执行运行（比如在linux中），需要去掉； 结尾空白也需要去掉
 	// window.clipboardData.setData("code", e.target.innerText);

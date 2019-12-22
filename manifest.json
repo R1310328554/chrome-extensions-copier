@@ -19,21 +19,7 @@
   },
   "content_scripts": [
     {
-      "matches": ["https://www.cnblogs.com/*"
-	  , "https://jianshu.com/*"
-	  , "https://iteye.com/*"
-	  , "https://csdn.net/*"
-	  , "https://segmentfault.com/*"
-	  , "https://www.mooc.cn/*"
-	  , "https://www.w3school.com.cn/*"
-	  , "https://www.w3cschool.cn/*"
-	  , "https://www.runoob.com/*"
-	  , "https://github.com/*"
-	  , "https://stackoverflow.com/*"
-	  , "https://gitee.com/*"
-	 // , "https://juejin.im*" 
-	  , "https://cn.vuejs.org/*"
-	  , "http://open.chrome.360.cn/*"],
+      "matches": ["https://*/*","http://*/*"],
       "css": ["mystyles.css"],
       "js": ["jquery.js", "myscript.js"]
     }
